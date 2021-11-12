@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <script>
+<!--
+/*
+Random link button- By JavaScript Kit (http://javascriptkit.com)
+Over 300+ free scripts!
+This credit MUST stay intact for use
+*/
+
+//specify random links below. You can have as many as you want
+var randomlinks=new Array()
+
+randomlinks[0]="https://docs.google.com/forms/d/12FAl1253KJrCu4uqjRNwjx1D6ndINXYymQSsp1AvNyU/edit?usp=forms_home&ths=true"
+randomlinks[1]="https://docs.google.com/forms/d/1MrzAVKQPBxIOcxeSNJLF4xC5YZPiXpQqJa2CtoiEgjs/edit"
+randomlinks[2]="https://docs.google.com/forms/d/1FoBzVxUgI3gJn4yB_sNlXsiD7XA095gDO0uXBdpTgUQ/edit?usp=forms_home&ths=true"
+randomlinks[3]="https://docs.google.com/forms/d/1EM6bZnBFmcNb5y8TlVUICuSYnyY9oZYBhvU72r_RuQM/edit?usp=forms_home&ths=true"
+
+
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
+</script>
+<form method="post">
+<p><input type="button" name="Start onderzoek" value="Start onderzoek >>" onclick="randomlink()"></p> </form>
+
+<!--Uncomment below to use a regular text link instead
+<a href="javascript:randomlink()">Random Link</a>
+--> </head>
